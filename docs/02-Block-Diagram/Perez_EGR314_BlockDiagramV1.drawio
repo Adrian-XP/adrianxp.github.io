@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.2.6">
+  <diagram name="Page-1" id="3WzWqKHnJN8FAjQIiwem">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;" value="" vertex="1">
+          <mxGeometry height="563" width="680" x="20" y="98.5" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" value="ESP32 Wifi Module" vertex="1">
+          <mxGeometry height="200" width="320" x="320" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-12" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-35" connectable="0" parent="w-eXuMVbMMl1d0LgofTP-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital - parallel&lt;div&gt;0-12V, 1 pin&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1333" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Motor Driver&lt;div&gt;&lt;b&gt;Manufacturer Part #&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DC Motor&lt;br&gt;&lt;b&gt;Manufacturer Part #&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Red LED" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-22" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-33" connectable="0" parent="w-eXuMVbMMl1d0LgofTP-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital - serial&lt;div&gt;1 pin&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6353" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Upstream Header" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-24" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-34" connectable="0" parent="w-eXuMVbMMl1d0LgofTP-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital - serial&lt;div&gt;1 pin&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4" y="6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Downstream Header" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="3.3V 1.5A Switching Power Supply&lt;div&gt;&lt;b&gt;Manufacturer Part #&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="521" y="451" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-30" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Barrel Jack Adapter" vertex="1">
+          <mxGeometry height="60" width="120" x="521" y="551" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GPIO1" vertex="1">
+          <mxGeometry height="40" width="80" x="320" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GPIO3" vertex="1">
+          <mxGeometry height="40" width="80" x="320" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-26" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-37" connectable="0" parent="w-eXuMVbMMl1d0LgofTP-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital - parallel&lt;div&gt;1 pin&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.096" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GPIO21" vertex="1">
+          <mxGeometry height="40" width="80" x="320" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-28" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-36" connectable="0" parent="w-eXuMVbMMl1d0LgofTP-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital - serial&lt;div&gt;1 pin&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2824" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GPIO19" vertex="1">
+          <mxGeometry height="40" width="80" x="320" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-38" edge="1" parent="1" source="w-eXuMVbMMl1d0LgofTP-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="w-eXuMVbMMl1d0LgofTP-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="12V 2A AC-DC Wall Power Supply&lt;div&gt;&lt;b&gt;Manufacturer Part #&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="712" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="w-eXuMVbMMl1d0LgofTP-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EGR 314 Team 208: Adrian Perez&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Submarine Explorer&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="311" x="175" y="59" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
