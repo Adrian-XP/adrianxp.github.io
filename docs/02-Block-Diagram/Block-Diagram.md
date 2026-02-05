@@ -6,19 +6,12 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
-
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+In this Subsystem, a motor driver requires two different power levels. 3.3V for the ESP32 and 12V for the motor. The subsystem is also connected to other subsystems via a UART that controls the motor's pulse and direction.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## Adrian's Block Diagram 
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+
+![Adrian's Indivial Block diagram ](Perez_EGR314_BlockDiagramV1.png)
+
+You can get it as a [PDF](Perez_EGR314_BlockDiagramV1.pdf) or a [Draw.io file.](Perez_EGR314_BlockDiagramV1.drawio)
