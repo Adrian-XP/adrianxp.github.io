@@ -4,62 +4,45 @@ title: Module's Selected Major Components
 
 ## Module's Selected Major Components
 
-The following sections are the selected major components necessary for  .....
+The following sections are the selected major components necessary for my subsystem of the project. This is the Main Hub subsystem that will communicate with all the other subsystems in this project. 
 
->**For each of the following sections, use <ins>one of the two styles</ins> given near the end. *REMOVE THIS NOTE***
 
 ### Power Management
 
-(**remove this note/placeholder**: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} **THAT WERE SELECTED**)
+The MIC5365-3.3YC5-TR is the optimal choice for this design. This regulator is a Low-Dropout (LDO) type. It is chosen because our system uses very little power for the logic circuits. Using a switching regulator like the TI or Diodes parts would be overkill. Those parts require an inductor and extra resistors, which take up too much board space and add cost.
 
-For more details, review the ["Appendix - Component Selection Process - Power Mangement"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) selection.
-
-### Sensor
-
-(**remove this note/placeholder**: if applicable, this is where your  **SELECTED** sensor is shown. Otherwise, remove this section.)
-
-For more details, review the ["Appendix - Component Selection Process - Sensor"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor) selection.
 
 ### Actuator
 
-(**remove this note/placeholder**: if applicable, this is where your **Selected** the actuator items go, which includes both the driver and motor. Otherwise, remove this section.)
+The PAN14EE12AA1 is the optimal choice for this design. The PAN14EE12AA1 provides the best balance of speed and cost-efficiency. It reaches 12,850 RPM, which is significantly higher than the SE18K1 model's 4,050 RPM. This high speed is vital to meeting the project's performance requirements without complex gearing. 
 
-For more details, review the ["Appendix - Component Selection Process - Actuator"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#actuator) selection.
+The IFX9201SGAUMA1 is the optimal choice for this design. This driver is the only option that provides enough power for the high-speed motors in our design. While the other drivers are cheaper, they only support 1A to 1.3A. Our motors require a driver that can handle higher startup and stall currents. The IFX9201 handles up to 6A, providing a large safety margin to prevent chip failure under heavy loads.**
 
------------
-> Remove the following before submitting! Use them to present the selected components
+---------------
 
-### Style 1
 
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
+**Power Management**
 
 | **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
+| ![](MIC5365-3.3YC5-TR.png)<br>Option 1.<br> MIC5365-3.3YC5-TR<br>$0.12/each<br>[link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC5365-3-3YC5-TR/1868094)                 | \* Very low electrical noise. <br>\* Only needs two small capacitors. <br>\* Extremely small SC-70 package.                                               | \* Limited to 150mA current.<br>\* Wastes energy as heat.<br>\* Input must stay near 3.3V.|
+| ![](TLV62569PDDCR.png)<br>\* Option 2. <br>\* AP1013CEN <br>\* $0.24/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/TLV62569PDDCR/8106072) | \* High 2A output current.<br>\* Great battery efficiency (95%).<br> \* Runs cool under heavy loads. | * Needs an external inductor. <br>\* More complex circuit layout.<br>\* Poor thermal dissipation. 
+| ![](AP61102Z6-7.png)<br>\* Option 3. <br>\* AP61102Z6-7 <br>\* $0.21/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP61102Z6-7/12702554) | \* Good 1A current rating.<br>\* Constant frequency operation.<br> \* Wide input voltage range. | * Lower efficiency than the TI part. <br>\* Needs extra board space. <br>\* More parts to buy and solder.
 
-**Rationale:** A clock oscillator is easier ....
 
-### Style 2
+**Motor Driver**
 
-> Also acceptable, more markdown friendly
+| **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](IFX9201SGAUMA1.png)<br>Option 1.<br> IFX9201SGAUMA1<br>$3.55/each<br>[link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542)                 | \* Highest current rating. (6A)<br>\* Advanced SPI interface for data. <br>\* Very robust protection features.                                               | \* Most expensive unit ($3.55).<br>\* Larger physical footprint.<br>\* Requires complex programming.|
+| ![](AP1013CEN.png)<br>\* Option 2. <br>\* AP1013CEN <br>\* $0.88/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/asahi-kasei-microdevices-akm/AP1013CEN/5182224) | \* Extremely low cost ($0.88).<br>\* Tiny 3x3mm QFN package.<br> \* Simple logic interface. | * Low 1.3A current limit. <br>\* Not for new designs (obsolete)<br>\* Poor thermal dissipation. 
+| ![](A3909GLYTR-T.png)<br>\* Option 3. <br>\* A3909GLYTR-T <br>\* $1.43/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/A3909GLYTR-T/3979656) | \* Includes four half-bridges.<br>\* Can drive two motors at once.<br> \* Small 10-MSOP package. | * Lowest current (1A per channel). <br>\* High 1.6 Ohm resistance. <br>\* Long 24-week lead time.
 
-**External Clock Module**
 
-1. XC1259TR-ND surface mount crystal
+**Actuator**
 
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
-
-**Rationale:** A clock oscillator is easier ...
+| **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](PAN14EE12AA1.png)<br>Option 1.<br> PAN14EE12AA1<br>$5.22/each<br>[link to product](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070)                 | \* Highest speed at 12,850 RPM.<br>\* Most affordable option ($5.22).<br>\* Uses a simple connector style.                                               | \* Larger diameter than others.<br>\* Slightly heavier at 39 grams.|
+| ![](SE18K1ETYC.png)<br>\* Option 2. <br>\* SE18K1ETYC <br>\* $9.29/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/SE18K1ETYC/6021449) | \* Square shape helps with mounting.<br>\* Lightweight (31.75 grams).<br> \* Middle price point ($9.29). | * Lowest speed at only 4,050 RPM. <br>\* Larger shaft diameter (2mm). 
+| ![](17N78210E.1.png)<br>\* Option 3. <br>\* 17N78210E.1 <br>\* $141.02/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/portescap/17N78210E-1/5032382) | \* Very small 17mm diameter.<br>\* Lightest weight (27.22 grams).<br> \* Wide temperature range. | * Extremely expensive ($141.02). <br>\* Requires soldering to tabs. <br>\* Longest lead time (21 weeks).
