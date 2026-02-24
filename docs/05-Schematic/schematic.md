@@ -4,13 +4,13 @@ title: Module Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is designed to support the power shared from the team and be the central hub system.
 
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+![schematic](Perez_EGR314_Schematic.png){style width:"350" height:"300;"}
+**Figure 1:** Showing schematic.
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic is available as a PDF download [*here*](Perez_EGR314_Schematic.pdf), and the project Zip folder [*here*](Perez_EGR314_Schematic.zip).
