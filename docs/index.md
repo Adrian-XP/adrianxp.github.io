@@ -6,8 +6,7 @@ tags:
 ---
 <center>
 <font size= "6"> Adrian Perez's Datasheet</font><br>
-as part of<br>
-<font size= "8"> Project Name</font><br>
+as part of Submersible Surveyor<br>
 for<br>
 <font size= "5"> Team 308 </font><br>
 
@@ -16,12 +15,11 @@ for<br>
 
 ## Introduction
 
-* **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
+* **This datasheet is to show the hub system for the Submersible Surveyor.**
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [TEAM REPORT.](https://egr314-s-2026-308.github.io/)
+* This project is meant to create a system that can be used for exploratory purposes, such as a probe or rover, based on modular standards. The final prototype demonstrates how the device interacts with its environment without needing to function in actual extreme conditions. [TEAM REPORT.](https://egr314-s-2026-308.github.io/)
 
 ### My Contribution
 
