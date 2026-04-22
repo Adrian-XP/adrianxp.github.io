@@ -26,7 +26,7 @@
 
     
       
-        <title>API - EGR 314 Adrian Perez Data Sheet</title>
+        <title>Overview - EGR 314 Adrian Perez Data Sheet</title>
       
     
     
@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -120,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              Overview
             
           </span>
         </div>
@@ -777,16 +782,57 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    API
+    Overview
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#team-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Members
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -873,6 +919,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#team-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Members
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -895,9 +960,228 @@
   
 
 
-  <h1>API</h1>
-
-
+<h1 id="overview">Overview</h1>
+<p>The Hub acts as a middle node in the project. It receives messages from the chain, sends messages when needed, and passes messages to the other subsystems.</p>
+<h2 id="team-members">Team Members</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Individual</strong></th>
+<th><strong>No.</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sam B</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Adrian P (Me)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Andrew I</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Jacob D</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sam M</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Mo A</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h1 id="messages-that-are-directed-to-the-hub">Messages That Are Directed to The Hub</h1>
+<h2 id="message-type-12-request-subsystem-status">Message Type 12 - Request Subsystem Status</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Byte</strong></th>
+<th><strong>Variable Name</strong></th>
+<th><strong>Variable Type</strong></th>
+<th><strong>Min</strong></th>
+<th><strong>Max</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uni8_t</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>2</td>
+<td>subsystem_number</td>
+<td>uni8_t</td>
+<td>0</td>
+<td>15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>request_code</td>
+<td>uni8_t</td>
+<td>0</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Purpose:</li>
+<li>Requests status from the hub</li>
+<li>Behavior:</li>
+<li>If subsystem_number = 3 → process</li>
+<li>Otherwise → forward message</li>
+</ul>
+<h2 id="message-type-20-hub-command-message">Message Type 20 - Hub Command Message</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Byte</strong></th>
+<th><strong>Variable Name</strong></th>
+<th><strong>Variable Type</strong></th>
+<th><strong>Min</strong></th>
+<th><strong>Max</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uni8_t</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>subsystem_number</td>
+<td>uni8_t</td>
+<td>0</td>
+<td>15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>command_code</td>
+<td>uni8_t</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>command_code</td>
+<td>int8_t</td>
+<td>-100</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Purpose:</li>
+<li>Send control commands to the hub</li>
+<li>Behavior:</li>
+<li>Execute the command if addressed to the hub</li>
+<li>Ignore invalid values</li>
+</ul>
+<h1 id="messages-sent-by-the-hub">Messages Sent by The Hub</h1>
+<h2 id="message-type-2-status-response">Message Type 2 - Status Response</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Byte</strong></th>
+<th><strong>Variable Name</strong></th>
+<th><strong>Variable Type</strong></th>
+<th><strong>Min</strong></th>
+<th><strong>Max</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uni8_t</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>subsystem_number</td>
+<td>uni8_t</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>status_code</td>
+<td>uni8_t</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>data_value</td>
+<td>int8_t</td>
+<td>-100</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Purpose:</li>
+<li>Send status data back to the controller</li>
+</ul>
+<h2 id="message-type-14-error-message">Message Type 14 - Error Message</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Byte</strong></th>
+<th><strong>Variable Name</strong></th>
+<th><strong>Variable Type</strong></th>
+<th><strong>Min</strong></th>
+<th><strong>Max</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uni8_t</td>
+<td>14</td>
+<td>14</td>
+</tr>
+<tr>
+<td>2</td>
+<td>subsystem_number</td>
+<td>uni8_t</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>error_code</td>
+<td>int8_t</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>sensor_id</td>
+<td>uni8_t</td>
+<td>0</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Purpose:</li>
+<li>Report errors to the controller or the team</li>
+</ul>
 
 
 
