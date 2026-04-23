@@ -1,4 +1,7 @@
-# Overview
+---
+title: API
+---
+
 The Hub acts as a middle node in the project. It receives messages from the chain, sends messages when needed, and passes messages to the other subsystems.
 
 
