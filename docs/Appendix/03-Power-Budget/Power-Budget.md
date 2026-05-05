@@ -5,7 +5,7 @@ title: Appendix - Power Budget
 ## Overview
 I examined the main components of my subsystem and determined their maximum current. I added a safety margin and checked if the supply could handle the load. If the supply fails, I will go back and choose better components.
 
-[Perez power budget](Perez_Power_Budget.png)
+![powerbudget](Perez_Power_Budget.png)
 
 ## Conclusions
 
