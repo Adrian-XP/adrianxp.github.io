@@ -77,7 +77,8 @@ The Hub acts as a middle node in the project. It receives messages from the chai
 - Purpose:
   - Report errors to the controller or the team
 
-
+## Resources
+All the coding documentation is available in a zip file [*here*](Perez_Hub_Code.zip).
 
 
 
