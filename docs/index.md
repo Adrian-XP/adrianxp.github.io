@@ -10,22 +10,29 @@ as part of Submersible Surveyor<br>
 for<br>
 <font size= "5"> Team 308 </font><br>
 
-**Submission: March 01, 2026**
+**Submission: May 4, 2026**
 </center>
 
 ## Introduction
 
-* **This datasheet is to show the hub system for the Submersible Surveyor.**
+* **This section details the hub subsystem for the Rugged Surveyor project. The hub serves as the submarine's brain, managing all incoming data. It connects the sensors to the main controllers, ensuring the robot reacts to its environment. Its primary role is to process signals from the light and temperature sensors and to wirelessly transmit messages from the HMI subsystems via Wi-Fi to control the motors. By handling these tasks, the hub allows the submarine to navigate and record data. This subsystem is vital for exploring deep or hazardous waters where humans cannot go.
+**
 
 ### Project Summary
 
-* This project is meant to create a system that can be used for exploratory purposes, such as a probe or rover, based on modular standards. The final prototype demonstrates how the device interacts with its environment without needing to function in actual extreme conditions. [TEAM REPORT.](https://egr314-s-2026-308.github.io/)
+* This project is meant to create a system that can be used for exploratory purposes, such as a probe or rover, based on modular standards. The final prototype demonstrates how the device interacts with its environment without needing to function in actual extreme conditions. To access the full report on the device, the link here will direct you: [TEAM REPORT.](https://egr314-s-2026-308.github.io/)
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
-
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
-
->Continue for all the remaining/missing sections.
+* This subsystem is capable of receiving all the other subsystems' signals and passing them along to the HMI component, as well as pinging all subsystems for immediate data.
+* [Block Diagram]()
+* [Component Selection]()
+* [Power budget]()
+* [Schematic]()
+* [PCB]()
+* [BOM]()
+* [API]()
+* [Hardware V2]()
+* [Reflection]()
+* [Appendix]()
+* [Microcontroller Selection]()
