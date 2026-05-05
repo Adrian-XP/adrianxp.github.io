@@ -9,16 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/02-Microcontroller-Selection/pic-table/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/HardwareV2/HardwareV2/">
       
       
-        <link rel="prev" href="../esp-32-table/">
+        <link rel="prev" href="../../Appendix/03-Power-Budget/Power-Budget/">
       
       
-        <link rel="next" href="../../03-Power-Budget/Power-Budget/">
       
-      
-      <link rel="icon" href="../../../static/logo314.png">
+      <link rel="icon" href="../../static/logo314.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
             
 
@@ -26,14 +24,14 @@
 
     
       
-        <title>Appendix - Controller Table for the PIC - EGR 314 Adrian Perez Data Sheet</title>
+        <title>Hardware V2 - EGR 314 Adrian Perez Data Sheet</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,7 +61,7 @@
     
 
 
-  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -89,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#version-2-improvements" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,9 +104,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="EGR 314 Adrian Perez Data Sheet" class="md-header__button md-logo" aria-label="EGR 314 Adrian Perez Data Sheet" data-md-component="logo">
+    <a href="../.." title="EGR 314 Adrian Perez Data Sheet" class="md-header__button md-logo" aria-label="EGR 314 Adrian Perez Data Sheet" data-md-component="logo">
       
-  <img src="../../../static/logo314.svg" alt="logo">
+  <img src="../../static/logo314.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appendix - Controller Table for the PIC
+              Hardware V2
             
           </span>
         </div>
@@ -195,7 +198,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -214,7 +217,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../01-Requirements/Requirements/" class="md-tabs__link">
+        <a href="../../01-Requirements/Requirements/" class="md-tabs__link">
           
   
     
@@ -234,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../02-Block-Diagram/Block-Diagram/" class="md-tabs__link">
+        <a href="../../02-Block-Diagram/Block-Diagram/" class="md-tabs__link">
           
   
     
@@ -254,7 +257,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../03-Component-Selection/Component-Selection/" class="md-tabs__link">
+        <a href="../../03-Component-Selection/Component-Selection/" class="md-tabs__link">
           
   
     
@@ -274,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../04-BOM/BOM/" class="md-tabs__link">
+        <a href="../../04-BOM/BOM/" class="md-tabs__link">
           
   
     
@@ -294,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../05-Schematic/schematic/" class="md-tabs__link">
+        <a href="../../05-Schematic/schematic/" class="md-tabs__link">
           
   
     
@@ -314,7 +317,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../06-PCB/PCB/" class="md-tabs__link">
+        <a href="../../06-PCB/PCB/" class="md-tabs__link">
           
   
     
@@ -334,7 +337,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../07-Reflection/Reflection/" class="md-tabs__link">
+        <a href="../../07-Reflection/Reflection/" class="md-tabs__link">
           
   
     
@@ -354,12 +357,32 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../API/API/" class="md-tabs__link">
+        <a href="../../API/API/" class="md-tabs__link">
           
   
     
   
   API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Appendix/" class="md-tabs__link">
+          
+  
+    
+  
+  Appendix
 
         </a>
       </li>
@@ -376,27 +399,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
-          
-  
-    
-  
-  Appendix
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../HardwareV2/HardwareV2/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -437,9 +440,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="EGR 314 Adrian Perez Data Sheet" class="md-nav__button md-logo" aria-label="EGR 314 Adrian Perez Data Sheet" data-md-component="logo">
+    <a href="../.." title="EGR 314 Adrian Perez Data Sheet" class="md-nav__button md-logo" aria-label="EGR 314 Adrian Perez Data Sheet" data-md-component="logo">
       
-  <img src="../../../static/logo314.svg" alt="logo">
+  <img src="../../static/logo314.svg" alt="logo">
 
     </a>
     EGR 314 Adrian Perez Data Sheet
@@ -466,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -506,7 +509,7 @@
         
   
   
-    <a href="../../../01-Requirements/Requirements/" class="md-nav__link">
+    <a href="../../01-Requirements/Requirements/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -552,7 +555,7 @@
         
   
   
-    <a href="../../../02-Block-Diagram/Block-Diagram/" class="md-nav__link">
+    <a href="../../02-Block-Diagram/Block-Diagram/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -598,7 +601,7 @@
         
   
   
-    <a href="../../../03-Component-Selection/Component-Selection/" class="md-nav__link">
+    <a href="../../03-Component-Selection/Component-Selection/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -644,7 +647,7 @@
         
   
   
-    <a href="../../../04-BOM/BOM/" class="md-nav__link">
+    <a href="../../04-BOM/BOM/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -690,7 +693,7 @@
         
   
   
-    <a href="../../../05-Schematic/schematic/" class="md-nav__link">
+    <a href="../../05-Schematic/schematic/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -736,7 +739,7 @@
         
   
   
-    <a href="../../../06-PCB/PCB/" class="md-nav__link">
+    <a href="../../06-PCB/PCB/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -782,7 +785,7 @@
         
   
   
-    <a href="../../../07-Reflection/Reflection/" class="md-nav__link">
+    <a href="../../07-Reflection/Reflection/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -828,7 +831,7 @@
         
   
   
-    <a href="../../../API/API/" class="md-nav__link">
+    <a href="../../API/API/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -851,8 +854,6 @@
       
   
   
-    
-  
   
   
     
@@ -863,6 +864,54 @@
         
       
         
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Appendix/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
       
         
       
@@ -881,105 +930,26 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked="">
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
   
   <span class="md-ellipsis">
-    Appendix
+    HardwareV2
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            Appendix
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            HardwareV2
           </label>
           <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" checked="">
-        
-          
-          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    02 Microcontroller Selection
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10_2">
-            <span class="md-nav__icon md-icon"></span>
-            02 Microcontroller Selection
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../esp-32-table/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Esp 32 table
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -995,70 +965,52 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Hardware V2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Appendix - Controller Table for the PIC
+    Hardware V2
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
         
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../03-Power-Budget/Power-Budget/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    03 Power Budget
-  </span>
-  
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
-
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#version-2-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 2 Improvements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1067,52 +1019,6 @@
             
           </ul>
         </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../HardwareV2/HardwareV2/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    HardwareV2
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
       
     </li>
   
@@ -1136,6 +1042,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#version-2-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 2 Improvements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1149,7 +1072,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/EGR314DataSheetTemplate/edit/main/docs/Appendix/02-Microcontroller-Selection/pic-table.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/EGR314DataSheetTemplate/edit/main/docs/HardwareV2/HardwareV2.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
     </a>
@@ -1157,159 +1080,10 @@
   
 
 
-  <h1>Appendix - Controller Table for the PIC</h1>
+  <h1>Hardware V2</h1>
 
-<table>
-<thead>
-<tr>
-<th>PIC Info</th>
-<th>Answer</th>
-<th>Help</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Model</td>
-<td>?</td>
-<td>Include the entire part number (leave off any letters at the end that specify the package type)</td>
-</tr>
-<tr>
-<td>Product Page URL</td>
-<td>?</td>
-<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>Datasheet URL(s)</td>
-<td>?</td>
-<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>Application Notes URL(s)</td>
-<td>?</td>
-<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>Vendor link</td>
-<td>?</td>
-<td>Digikey, Jameco, etc.  Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>Code Examples</td>
-<td>?</td>
-<td>url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals</td>
-</tr>
-<tr>
-<td>External Resources URL(s)</td>
-<td>?</td>
-<td>Search on Google and YouTube for other resources for each specific microcontroller.</td>
-</tr>
-<tr>
-<td>Unit cost</td>
-<td>?</td>
-<td>Find in the Microchip online store, or Digikey</td>
-</tr>
-<tr>
-<td>Absolute Maximum Current for entire IC</td>
-<td>?</td>
-<td>Find in the microcontroller datasheet</td>
-</tr>
-<tr>
-<td>Supply Voltage Range</td>
-<td>?</td>
-<td>Min / Nominal / Max / Absolute Max, as found in datasheet</td>
-</tr>
-<tr>
-<td>Absolute Maximum current <br> (for entire IC)</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Maximum GPIO current <br> (per pin)</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Supports External Interrupts?</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Required Programming Hardware, Cost, URL</td>
-<td>?</td>
-<td>found on the microcontroller's product page</td>
-</tr>
-<tr>
-<td>Works with MPLabX?</td>
-<td>?</td>
-<td>Required.  See <a href="https://www.microchip.com/development-tools">Microchip Development Tools</a></td>
-</tr>
-<tr>
-<td>Works with Microchip Code Configurator?</td>
-<td>?</td>
-<td>Can be validated in MPLabX.  Screenshot required.</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Module</th>
-<th># Available</th>
-<th>Needed</th>
-<th>Associated Pins (or * for any)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GPIO</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>ADC</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>UART</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>SPI</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>ICSP</td>
-<td>?</td>
-<td>1</td>
-<td>?</td>
-</tr>
-<tr>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
+<h2 id="version-2-improvements">Version 2 Improvements</h2>
+<p>To build an improved hub subsystem for a submersible, the hardware design must focus more on thermal safety and efficiency. By spreading voltage regulators away from heat-sensitive microcontrollers, we prevent thermal hotspots that could cause system failure within a sealed pressure hull (ideally for the project). Utilizing both sides of the PCB for component mounting is another vital step; placing passive components on the back clears the top layer for wider copper traces, which improves power delivery and cooling. I would also include larger surface-mounted parts for easier soldering, rather than making it look sleek with smaller parts. For better reliability, the board must include more test points at every critical power rail and communication line. These points allow for quick diagnostics without the risk of accidental shorts during bench testing. Finally, including safeguards such as transient-voltage-suppression diodes and resettable fuses protects the hub from power surges or battery polarity errors. These combined hardware improvements ensure the system can survive the high pressures and corrosive risks of deep-sea exploration while being much easier to maintain. </p>
 
 
 
@@ -1348,7 +1122,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../esp-32-table/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Esp 32 table">
+          <a href="../../Appendix/03-Power-Budget/Power-Budget/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Appendix - Power Budget">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -1358,27 +1132,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Esp 32 table
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../../03-Power-Budget/Power-Budget/" class="md-footer__link md-footer__link--next" aria-label="Next: Appendix - Power Budget">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
                 Appendix - Power Budget
               </div>
             </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-            </div>
           </a>
+        
         
       </nav>
     
@@ -1416,12 +1174,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
