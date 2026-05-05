@@ -605,6 +605,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#development-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -949,6 +967,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#development-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -975,10 +1011,21 @@
   <h1>Module's Block Diagram</h1>
 
 <h2 id="overview">Overview</h2>
-<p>In this Subsystem, a motor driver requires two different power levels. 3.3V for the ESP32 and 12V for the motor. The subsystem is also connected to other subsystems via a UART that controls the motor's pulse and direction.</p>
+<p>In this module, it is very simple: the ESP32 is connected to 3.3V, the motor driver, and the motor are there in case the system isn't complex enough. This module is also connected to two other modules, one being through UART and the other wirelessly.</p>
 <h2 id="adrians-block-diagram">Adrian's Block Diagram</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Perez_EGR314_BlockDiagramV1.png" data-desc-position="bottom"><img alt="Adrian's Indivial Block diagram " src="../Perez_EGR314_BlockDiagramV1.png"></a></p>
-<p>You can get it as a <a href="../Perez_EGR314_BlockDiagramV1.pdf">PDF</a> or a <a href="../Perez_EGR314_BlockDiagramV1.drawio">Draw.io file.</a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Perez_Individual_Block_Diagram_FinalV.png" data-desc-position="bottom"><img alt="Adrian's Indivial Block diagram " src="../Perez_Individual_Block_Diagram_FinalV.png"></a></p>
+<p>You can get it as a <a href="../Perez_Individual_Block_Diagram_FinalV.pdf">PDF</a> or a <a href="../Perez_Individual_Block_Diagram_FinalV.drawio">Draw.io file.</a></p>
+<h2 id="development-process">Development Process</h2>
+<p>My team was on the same page about the kind of exploratory device we wanted to do, and we allocated it to put ourselves in the areas we wanted to learn or improve. In 304, I was just a simple sensor subsystem, and I wanted to branch out into signal management and explore new territory, so I decided to be the hub of our project. Thinking about how I need to be the hub, I need to map out all the messages and signals my teammates will send. Since we have 3 sensors, a motor controller, and an HMI, I need to be able to communicate with all of them and wirelessly connect to the HMI. This would then force me to immensely grow my coding skills to manage all the message typing and reading from everyone.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>MQTT and  WIFI</li>
+<li>Utilizes ESP32</li>
+<li>UART Upstream and downstream connection</li>
+<li>Switching regulator</li>
+<li>Surface mount components</li>
+<li>USB programming</li>
+</ul>
 
 
 
