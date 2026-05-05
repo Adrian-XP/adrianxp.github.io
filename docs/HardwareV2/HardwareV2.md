@@ -1,0 +1,6 @@
+---
+title: Hardware V2
+---
+
+## Version 2 Improvements
+To build an improved hub subsystem for a submersible, the hardware design must focus more on thermal safety and efficiency. By spreading voltage regulators away from heat-sensitive microcontrollers, we prevent thermal hotspots that could cause system failure within a sealed pressure hull (ideally for the project). Utilizing both sides of the PCB for component mounting is another vital step; placing passive components on the back clears the top layer for wider copper traces, which improves power delivery and cooling. I would also include larger surface-mounted parts for easier soldering, rather than making it look sleek with smaller parts. For better reliability, the board must include more test points at every critical power rail and communication line. These points allow for quick diagnostics without the risk of accidental shorts during bench testing. Finally, including safeguards such as transient-voltage-suppression diodes and resettable fuses protects the hub from power surges or battery polarity errors. These combined hardware improvements ensure the system can survive the high pressures and corrosive risks of deep-sea exploration while being much easier to maintain. 
